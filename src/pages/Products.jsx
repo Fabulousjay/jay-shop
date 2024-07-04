@@ -1,6 +1,6 @@
 /** @format */
 
-import { Filters, ProductsContainer, PaginationContainer } from '../components';
+import { ProductsContainer, PaginationContainer, Filters } from '../components';
 
 import { customFetch } from '../utils';
 const url = '/products';
