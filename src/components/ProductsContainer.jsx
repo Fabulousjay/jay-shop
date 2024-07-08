@@ -11,7 +11,7 @@ const ProductsContainer = () => {
 	const { meta } = useLoaderData();
 	const totalProducts = meta.pagination.total;
 
-	console.log(totalProducts);
+	// console.log(totalProducts);
 
 	const [layout, setLayout] = useState('grid');
 

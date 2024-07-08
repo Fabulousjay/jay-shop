@@ -11,7 +11,7 @@ const ProductGrids = () => {
 	// It provides a way to access the data fetched by loader functions defined in your route configuration.
 	//This ensures that your components have access to the necessary data when they are rendered as part of the route.
 
-	console.log(products);
+	// console.log(products);
 	return (
 		<div className="pt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
 			{products.map((product) => {
