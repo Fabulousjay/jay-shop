@@ -23,13 +23,14 @@ const SingleProduct = () => {
 	};
 
 	const cartProduct = {
-		cartID: product.id + productColor,
+		cartID: product.id + productColor, //we dont want items with different color to have the same ID
 		productID: product.id,
 		image,
 		title,
 		price,
 		company,
 		productColor,
+		amount,
 	};
 
 	const dispatch = useDispatch();
