@@ -12,9 +12,14 @@ const defaultState = {
 	orderTotal: 0,
 };
 
+const getCartFromLocalStorge = () => {
+	return JSON.parse(localStorage.getItem('cart')) || defaultState;
+};
+
 const cartSlice = createSlice({
 	name: 'cart',
-	initialState: defaultState,
+	// initialState: defaultState,
+	initialState: getCartFromLocalStorge(),
 	reducers: {
 		addItem: (state, action) => {
 			const { product } = action.payload;
