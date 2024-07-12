@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 
 const defaultState = {
 	cartItems: [],
-	numItemsInCart: 0,
+	numItemsInCart: 10,
 	cartTotal: 0,
 	shipping: 500, //in cent
 	tax: 0,
@@ -30,6 +30,7 @@ const cartSlice = createSlice({
 			} else {
 				state.cartItems.push(product);
 			}
+
 			state.numItemsInCart += product.amount;
 			state.cartTotal += product.price * product.amount;
 			cartSlice.caseReducers.calculateTotals(state);
